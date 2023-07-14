@@ -3,7 +3,7 @@ Face Attendance webapplication which will run on browser , and connected to post
 
 <h3>FULL END TO END FACE ATTENDANCE SYSTEM</h3>
 
-<h3>1) Implementation</h3>
+<h3>Implementation</h3>
 <ul>
   <li>If you want to see how the underlying model works for recognition then check out this <a href="https://github.com/mathanprasannakumar/FaceRecognition"><b>notebook</b></li>
   <li>Technologies used : Nodejs , Express for server ,POSTGRESQL for database ,HMTL CSS JAVASCRIPT for front end 
