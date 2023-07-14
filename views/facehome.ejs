@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Face verify</title>
+  <script defer src="./faceapimodels/face-api.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"> </script>
+  <script defer src="./js/facehome.js"></script>
+  <link rel="stylesheet" href="./dist/styles.css">
+</head>
+<body>
+  <div class ="videobox" id="videoshow" style="display:none" >
+    <canvas id="face"></canvas>
+    <section class="captureblock">
+      <video id="video" width="500" height="500" autoplay  muted></video>
+      <canvas id="canva" width="500" height="500" ></canvas>
+    </section>
+    <div class="buttonbox">
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+        <button id="in" value="in">In</button>
+        <button id="out" value="out">Out</button>
+    </div>
+  </div>
+    <form class="usernamebox" id="formshow" >
+      <% if(message) {%>
+        <p><%= message %></p>
+        <%} %>
+      <input type="text" id="username" name="name" placeholder="Enter your username" required>
+      <input type="submit" id="submit" value="Submit">
+    </form>  
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Register</title>
+  <script defer src="./faceapimodels/face-api.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"> </script>
+  <script defer src="./js/faceregister.js"></script>
+  <link rel="stylesheet" href="/dist/styles.css">
+
+</head>
+
+<body>
+  <canvas id="face"></canvas>
+  <% if(message)%>
+  <% { %>
+    <div class="warning">
+        <p id="message"><%=message%></p>
+        <p>Take your picture and Enter your username</p>  
+    </div>
+  <% } %>
+  <section class="captureblock">
+    <video id="video" width="500" height="500" autoplay muted></video>
+    <canvas id="canva" width="500" height="500" ></canvas>
+  </section>
+  <div class="buttonbox">
+      <button id="start">Start</button>
+      <button id="stop">Stop</button>
+      <button id="capture">Capture</button>
+  </div>
+  <form class="usernamebox">
+    <input type="text" id="username" name="name" placeholder="Enter your username" required>
+    <input type="submit" id="submit" value="Register" disabled>
+  </form>
+</body>
+
+</html>
