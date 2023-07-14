@@ -38,7 +38,7 @@ Face Attendance webapplication which will run on browser , and connected to post
   </ul>
 
 
-Note: This is not a automatic facerecognition system , here users need to enter their username and  press in and out for the registration of thier attendance
+<b>Note:</b> This is not a automatic facerecognition system , here users need to enter their username and  press in and out for the registration of thier attendance, Iam current working on the automatic face recognition so Kindly stay tuned
 
 
 <h3>References</h3>
