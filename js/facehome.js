@@ -18,11 +18,13 @@ const submit = document.getElementById('submit')
 const formshow = document.getElementById('formshow')
 const videoshow = document.getElementById('videoshow')
 
+const modelURL = "/tfjsversion/model.json"
+
 Promise.all([
-  faceapi.nets.tinyFaceDetector.loadFromUri('./faceapimodels')
+  faceapi.nets.tinyFaceDetector.loadFromUri('/faceapimodels')
 ])
 
-let model  = tf.loadGraphModel('http://localhost:5000/public/tfjsversion/model.json')
+let model  = tf.loadGraphModel(modelURL)
 
 async function verify()
 {
