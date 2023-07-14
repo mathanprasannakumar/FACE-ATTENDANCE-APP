@@ -7,7 +7,7 @@ Face Attendance webapplication which will run on browser , and connected to post
 <ul>
   <li>If you want to see how the underlying model works for recognition then check out this <a href="https://github.com/mathanprasannakumar/FaceRecognition"><b>notebook</b></li>
   <li>Technologies used : Nodejs , Express for server ,POSTGRESQL for database ,HMTL CSS JAVASCRIPT for front end 
-  <li>Here <b>image of the person is not stored in the database and image will never reach server ,only embedding of the image  is being stored for verification, so user dont need to worry about their images getting leaked or misused</b></li>
+  <li>Here <b>image of the person is not stored in the database and image will never reach server</b> ,only embedding of the image  is being stored for verification, so user dont need to worry about their images getting leaked or misused</li>
   <li>In the note book above, i used mediapipe for the face detection but here mediapipe is not used, here <a href="https://justadudewhohacks.github.io/face-api.js/docs/index.html"><b>FACEAPI</b></a> is used for getting the bounding box coordinates</li>
 </ul>
   <h3>Step 1:</h3>
