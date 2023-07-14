@@ -1,4 +1,4 @@
-# FACEATTENDANCEAPP
+# FACE-ATTENDANCE-APP
 Face Attendance webapplication which will run on browser , and connected to postgreSQL database for registering the attendance.
 
 <h3>FULL END TO END FACE ATTENDANCE SYSTEM</h3>
