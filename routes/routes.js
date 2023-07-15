@@ -1,5 +1,4 @@
 import express from "express";
-import {pool} from "../services/dbConnect.js"
 import {check} from "./controllers/check.js"
 import {registerg,registerp} from "./controllers/register.js"
 import {entryp,entryg} from "./controllers/entry.js"

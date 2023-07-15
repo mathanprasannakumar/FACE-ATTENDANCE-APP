@@ -21,7 +21,6 @@ export function check (req,res){
                         res.json({url:'/register'})
                      }
                     else{
-                        console.log(results)
                         client.release()
                         res.json({username:results.rows[0].username,embed:results.rows[0].embed}) 
                         // res.json({url})

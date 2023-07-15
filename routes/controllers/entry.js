@@ -15,7 +15,6 @@ export function entryp(req,res){
                         const x = `INSERT INTO attendancerecords (userid,type,time)
                         VALUES ($1,$2,$3)`;
                         const y = [results.rows[0].userid,entry,'NOW()']
-                        console.log(x,y)
                         client.query(x,y)
                             .then(results=>{
                                 client.release()

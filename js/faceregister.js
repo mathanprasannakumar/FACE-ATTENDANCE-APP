@@ -22,7 +22,7 @@ const form = document.getElementsByClassName('usernamebox')[0]
 Promise.all([
   faceapi.nets.tinyFaceDetector.loadFromUri('./faceapimodels')
 ])
-model = tf.loadGraphModel('http://localhost:5000/public/tfjsversion/model.json')
+model = tf.loadGraphModel('/public/tfjsversion/model.json')
 
 async function verify()
 {

@@ -22,7 +22,7 @@ Promise.all([
   faceapi.nets.tinyFaceDetector.loadFromUri('./faceapimodels')
 ])
 
-let model  = tf.loadGraphModel('http://localhost:5000/public/tfjsversion/model.json')
+let model  = tf.loadGraphModel('./public/tfjsversion/model.json')
 
 async function verify()
 {
