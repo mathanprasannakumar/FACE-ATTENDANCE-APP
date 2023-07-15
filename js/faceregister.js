@@ -8,7 +8,7 @@ const stop = document.getElementById('stop')
 const capture = document.getElementById('capture')
 const canvas = document.getElementById('canva')
 const face = document.getElementById('face')
- 
+
 let model 
 var interval =0
 let lx,ly,rx,ry;
@@ -19,13 +19,10 @@ const usernameinput = document.getElementById('username')
 const form = document.getElementsByClassName('usernamebox')[0]
 
 
-const modelURL = '/tfjsversion/model.json'
-
 Promise.all([
-  faceapi.nets.tinyFaceDetector.loadFromUri('/faceapimodels')
+  faceapi.nets.tinyFaceDetector.loadFromUri('./faceapimodels')
 ])
-
-model  = tf.loadGraphModel(modelURL)
+model = tf.loadGraphModel('http://localhost:5000/public/tfjsversion/model.json')
 
 async function verify()
 {
