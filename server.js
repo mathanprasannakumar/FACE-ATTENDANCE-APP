@@ -4,7 +4,7 @@ import path from 'path'
 const app = express();
 
 
-const port = process.env.PORT || 5000
+const port = process.env.PORT || 3001
 app.set("view engine","ejs")
 app.use(express.json())
 app.use(express.urlencoded({
@@ -16,7 +16,7 @@ app.use('/',router)
 
 
 app.listen(port,()=>{
-    console.log("Application is running on the port 5000")
+    console.log("Application is running on the port 3001")
 })
 
 

@@ -9,7 +9,7 @@ const router = express.Router();
 
 router.get('/',(req,res)=>
 {
-    res.render('facehome',{message:"Hi Buddy"})
+    res.render('facehome',{message:"Hi Buddy, Enter your user name to register your attendance"})
 
 })
 

@@ -3,7 +3,6 @@ import {pool} from "../../services/dbConnect.js";
 export function entryp(req,res){
     
     const {username,entry} = req.body
-    console.log(username,entry)
     pool.connect()
         .then(client=>{
             const query =`SELECT * FROM users

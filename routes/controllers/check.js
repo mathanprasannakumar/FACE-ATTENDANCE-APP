@@ -7,7 +7,6 @@ import {pool} from '../../services/dbConnect.js';
 // ## Checking of the username
 export function check (req,res){
     const {name} = req.body
-    console.log(req.body)
     // acquiring the client from the connection pool
     pool.connect()
         .then(client=>{
@@ -17,7 +16,6 @@ export function check (req,res){
         
             client.query(query,value)
                 .then((results)=>{
-                    console.log(results)
                     if(results.rows.length===0)
                     {
                         res.json({url:'/register'})

@@ -3,7 +3,7 @@ import {pool} from '../../services/dbConnect.js'
 
 
 export function registerg(req,res){
-    res.render('faceregister',{message:"We are not having your image for verification , so kindly register yourself"});
+    res.render('faceregister',{message:"We are not having your image for verification , so kindly register yourself "});
 }
 
 export function registerp(req,res){
